@@ -8,9 +8,9 @@ public class AcceptanceTests {
 	@Test
 	public void acceptance_one() {
 		
-		String result = Solution.solution("362");
+		String result = Solution.solution("236");
 		
-		assertEquals(result, "632,623,362,326,263,236");
+		assertEquals("632,623,362,326,263,236", result);
 	}
 	
 	@Test
@@ -18,7 +18,7 @@ public class AcceptanceTests {
 		
 		String result = Solution.solution("A 3B2 C6D");
 		
-		assertEquals(result, "632,623,362,326,263,236");
+		assertEquals("632,623,362,326,263,236", result);
 	}
 	
 	@Test
@@ -26,7 +26,7 @@ public class AcceptanceTests {
 		
 		String result = Solution.solution("ABC");
 		
-		assertEquals(result, "Please enter a valid input with integers");
+		assertEquals("Please enter a valid input with integers", result);
 	}
 
 }
