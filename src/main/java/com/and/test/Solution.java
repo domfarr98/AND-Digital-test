@@ -12,9 +12,26 @@ public class Solution {
 
     public static String solution(String input) throws NumberFormatException {
     	
+    	ArrayList<String> numbers = new ArrayList<String>();
     	
+    	String numberNet = "0123456789";
     	
-        return null;
+    	// check for non-numbers
+    	for (int i = 0; i<input.length(); i++) {
+    		String currentNumber = Character.toString(input.charAt(i));
+    		if (numberNet.contains(currentNumber)) {
+    			numbers.add(currentNumber);
+    		}
+    	}
+    	
+    	String result = "";
+    	
+    	// add all numbers to one string
+    	for (int i = 0; i<numbers.size(); i++) {
+    		result = result + numbers.get(i);
+    	}
+    	
+        return result;
     }
 
     public static void main(String args[]) {
