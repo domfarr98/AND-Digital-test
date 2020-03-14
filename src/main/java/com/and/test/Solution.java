@@ -11,11 +11,14 @@ public class Solution {
      */
 
     public static String solution(String input) throws NumberFormatException {
+    	
+    	
+    	
         return null;
     }
 
     public static void main(String args[]) {
-        solution("326");
+        System.out.println(solution("326"));
     }
 
 }
